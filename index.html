@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Odysseas Vavourakis</title>
+		<meta name="keywords" content="machine learning, protein design, protein structure, structural bioinformatics, computational, biophysics, bioinformatics, computational biology, physical chemistry, academia, research, Oxford"/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="profile"><img src="images/profile_photo.PNG" alt="Odysseas profile photo"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Odysseas Vavourakis</h1>
+								<p>DPhil (PhD) Student, University of Oxford<br>SABS:R3 EPSRC CDT
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#about">About</a></li>
+								<li><a href="#research">Research</a></li>
+								<li><a href="#publications">Publications</a>
+							</ul>
+						</nav>
+					</header>
+					<br>
+					<ul class="icons">
+						<li><a href="mailto:odysseas.vavourakis@balliol.ox.ac.uk" class="icon fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+						<li><a href="https://twitter.com/ovavourakis" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+						<!-- THIS IS A COMMENT <li><a href="https://www.linkedin.com/in/alissa-hummer/" class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li> -->
+						<!-- THIS IS A COMMENT <li><a href="https://github.com/amhummer" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li> -->
+						<li><a href="https://scholar.google.com/citations?user=MRX-CNAAAAAJ" class="icon solid fa-graduation-cap" target="_blank"><span class="label">Google Scholar</span></a></li>
+						<li><a href="CV.pdf" class="icon fa-file-alt" target="_blank"><span class="label">CV</span></a></li>
+					</ul>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<p>
+									I’m broadly interested in developing and applying computational techniques to problems involving biomolecular structure.
+									This covers everything from interaction prediction and protein design, to modelling protein evolution and understanding the structure of the the associated phenotypic space.
+									<br><br>
+									In the past, I've worked a lot with molecular dynamics and various machine learning techniques, including work with protein language models. 
+									<!-- Recently I'm more focussed on graph-based and Bayesian ML, as well as flow-matching and diffusion models.  -->
+									I've also had a brief stint in theoretical chemical physics. Check out the research and publications pages for more details.
+									As a hobby, I've occasinally dabbled in information-theoretic approaches to evolution and game theory on graphs. 
+									<br><br>
+									My DPhil work is generously funded by Oxford University's flagship 
+									<u><a href="https://www.ox.ac.uk/clarendon">Clarendon Scholarship</a></u>, a Scatcherd European Scholarship and the Balliol College John Henry Jones Scholarship.
+									Throughout my undergraduate and Master's studies, I had the honour and the pleasure to receive support from the 
+									<u><a href="https://en.wikipedia.org/wiki/Studienstiftung">German Academic Scholarship Foundation</a></u>
+									(Studienstiftung des deutschen Volkes).
+								</p>
+								<br><br>
+								<h2 class="major">Education</h2>
+								<div class="flex-container">
+									<div class="flex-item">
+										<span class="image main"><img src="images/oxford_logo.png" alt="University of Oxford logo"/></span>
+									</div>
+									<div class="flex-item">
+										<p>2023-2027</p>
+										<p><b>DPhil in Sustainable Approaches to Biomedical Science (SABS:R3 CDT)</b></p>
+										<p>Balliol College, University of Oxford</p>
+									</div>
+								</div>
+								<br>
+								<div class="flex-container">
+									<div class="flex-item">
+										<span class="image main"><img src="images/ETHlogo.png" alt="logos of ETH Zurich, University of Zurich, and University of Basel"/></span>
+									</div>
+									<div class="flex-item">
+										<p>2020-2023</p>
+										<p><b>MSc Computational Biology & Bioinformatics</b></p>
+										<p>ETH Zürich, Switzerland</p>
+									</div>
+								</div>
+								<br>
+								<div class="flex-container">
+									<div class="flex-item">
+										<span class="image main"><img src="images/HDlogo.png" alt="Heidelberg University logo"/></span>
+									</div>
+									<div class="flex-item">
+										<p>2015-2018</p>
+										<p><b>BSc Biochemistry</b></p>
+										<p>Heidelberg University, Germany</p>
+										<p><em></em></p>
+									</div>
+								</div>
+							</article>
+
+						<!-- Research -->
+							<article id="research">
+								<h2 class="major">Past Research Projects</h2>
+
+								<div class="wrap-collapsible">
+									<input id="collapsible_esi" class="toggle" type="checkbox" checked>
+									<label for="collapsible_esi" class="lbl-toggle">Enzyme-Substrate Interactions</label>
+									<div class="collapsible-content">
+										<div class="content-inner">
+											<div class="flex-container">
+												<div class="flex-item">
+													<span class="image-collapsible"><img src="images/Boost-SE.png" alt="Schematic of Model Architecture"/></span>
+												</div>
+												<div class="flex-item">
+													<p>Enzymatic catalysis is a cornerstone of biological systems, but the secondary substrates of most enzymes are unknown.</p>
+													<p>In my MSc thesis project, I developed a recommendation system based on neural matrix factorisation that scores
+													potentially interacting enzyme-substrate pairs across all of enzyme and compound space. 
+													To do so, it uses only the substrate's MACCS fingerprint and a language-model embedding of the enzyme's sequence.
+													</p>
+												</div>
+											</div>
+											<p>The model can be used to identify likely-interacting pairs in order to accelerate high-value applications like drug-lead and -target identiﬁcation, or drug re-purposing.</p>
+											<p>This work was carried out in the <u><a href="https://las.inf.ethz.ch/">Learning and Adaptive Systems Group</a></u> at the AI Center of ETH Zürich, under the supervision of Prof Andreas Krause, Jonas Rothfuss, and Mojmir Mutný.</p>
+											<br>
+										</div>
+									</div>
+								</div>
+								<div class="wrap-collapsible">
+									<input id="collapsible_pimd" class="toggle" type="checkbox">
+									<label for="collapsible_pimd" class="lbl-toggle">Quantum Tunnelling Splittings from Quasi-Classical Mechanics</label>
+									<div class="collapsible-content">
+										<div class="content-inner">
+											<div class="flex-container">
+												<div class="flex-item">
+													<span class="image-collapsible"><img src="images/pimd.jpeg" alt="Hydronium PIMD"/></span>
+												</div>
+												<div class="flex-item">
+													<p>Tunnelling effects can strongly influence chemical reaction rates and tunnelling splittings give rise to characteristic features in high-resolution molecular spectra.
+													Unfortunately, quantum calculations often scale unfavourably with system size.</p>
+													<p>
+													To circumvent this, I helped develop and implement a new method to calculate small-molecule tunnelling splittings without quantum mechanics, 
+													using path-integral molecular dynamics and free-energy methods adopted from biomolecular simulation.
+													</p>
+												</div>
+											</div>
+											<p>
+												This work was carried out in the <u><a href="https://www.richardson.ethz.ch/">Theretical Molecular Quantum Dynamics Group</a></u> at ETH Zürich, under the supervision of Prof Jeremy Richardson and Dr George Trenins.
+												Read all about our work in the associated <u><a href="https://pubs.aip.org/aip/jcp/article/159/3/034108/2903097/Exact-tunneling-splittings-from-symmetrized-path" target="_blank">publication</a></u>.
+												</p>
+											<br>		
+										</div>
+										<br>
+									</div>
+								</div>
+
+								<div class="wrap-collapsible">
+									<input id="collapsible_bsc" class="toggle" type="checkbox">
+									<label for="collapsible_bsc" class="lbl-toggle">Mechanics of Peptides</label>
+									<div class="collapsible-content">
+										<div class="content-inner">
+											<p><span class="image-collapsible"><img src="images/Fprofile.png" alt="Spectrin Repeat At Point of Rupture"/></span></p>
+											<p>
+												Spectrins are a family of filamentous proteins composed of repeating, triple-helical repeat domains. 
+												They act as cytoskeletal springs, allowing cells to recover their shape after elastic deformation.
+											</p><p>
+												In my BSc thesis project, I used molecular dynamics simulations to study the mechanical properties of these repeating domains in isolation.
+												In particular, I focussed on their unfolding and re-folding behaviour under mechanical tension.
+											</p><p>
+												This work was carried out in the <u><a href="https://www.h-its.org/research/mbm/">Molecular Biomechanics Group</a></u> at the Heidelberg Institute for Theoretical Studies (HITS), under the supervision of 
+												Prof Frauke Gräter and Dr Csaba Daday.
+											</p>
+										</div>
+									</div>
+								</div>
+							</article>
+
+						<!-- Publications -->
+							<article id="publications">
+								<h2 class="major">Publications</h2>
+
+								You can also find me on <u><a href="https://scholar.google.com/citations?user=MRX-CNAAAAAJ" target="_blank">Google Scholar</a></u> and 
+								<u><a href="https://orcid.org/0009-0008-4704-2589" target="_blank">ORCID</a></u>.
+								<br><br>
+								
+								<div class="lbl-uncollapsible-toggle">
+									<p>
+										<em>Exact tunneling splittings from symmetrized path integrals.</em>
+										<br>
+										G. Trenins, L. Meuser, H. Bertschi, <b>O. Vavourakis</b>, R. Flütsch, J. O. Richardson 
+										<br>
+										J. Chem. Phys. 21 July 2023; 159 (3): 034108. 
+										<u><a href="https://doi.org/10.1063/5.0158879">https://doi.org/10.1063/5.0158879</a></u>
+									</p>
+								</div>	
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Odysseas Vavourakis 2023. Design: <a href="https://html5up.net">HTML5 UP</a> and <a href="https://amhummer.github.io/">Alissa Hummer</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
