@@ -829,7 +829,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 736px) {
+		/* @media screen and (max-width: 736px) {
 
 			.image.main {
 				margin: 2rem 0;
@@ -843,10 +843,11 @@ input, select, textarea {
 				margin: 1.5rem 0;
 			}
 
-		}
+		} */
 
 		.image-collapsible {
-			display: block;
+			/* display: block; */
+			float: left;
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: 2.5rem;
@@ -862,6 +863,9 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.image-collapsible {
+				float: none;
+				display: block;
+				width: 100%;
 				margin: 2rem 0;
 			}
 
@@ -879,7 +883,7 @@ input, select, textarea {
 		border-radius: 0px;
 		border: 0;
 		position: relative;
-		max-width: 60%;
+		max-width: 100%;
 	}
 
 	.image_not_inline_small img {
@@ -1846,8 +1850,10 @@ input, select, textarea {
 		display: table;
 	}*/
 
+	/* CONTAINERS FOR LOGO-TEXT PAIRINGS */
+	/* resize side-by-side all the way on small screens */
 	.flex-item {
-		/*border: 1px solid lightblue;*/
+		/* border: 1px solid lightblue; */
 		width: 90%;
 		/*height: 100%;*/
 		/*display: flex;
@@ -1856,8 +1862,54 @@ input, select, textarea {
 	}
 
 	.flex-container {
+		/* border: 1px solid red; */
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		padding: 0;
 	}
+
+	/* ODY's CONTAINERS FOR IMAGE/TEXT PAIRS IN RESEARCH SECTION */
+	/* images snap to top of text on small screens, wrap around otw */
+	.container {
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+	  }
+	  
+		.container_img {
+			float: left;
+			margin-left: 1.5rem;
+			margin-right: 1.5rem;
+			margin-top: 1.5rem;
+			margin-bottom: 1.5rem;
+			width: 45%;
+			text-align: center;
+		}
+
+			.container_img img {
+				width: 100%;
+			}
+	
+		.container_img_wide { /* for wide images - do not snap to left on larger screens */
+			float: center;
+			margin-left: 1.5rem;
+			margin-right: 1.5rem;
+			margin-top: 1.5rem;
+			margin-bottom: 1.5rem;
+			width: 90%;
+			text-align: center;
+			}
+
+			.container_img_wide img {
+				width: 100%;
+			}
+	  
+	  @media screen and (max-width: 600px) {
+		.container_img {
+		  float: none; 	  /* Remove the float on smaller screens */
+		  display: block; /* Make the image a block element instead */
+		  width: 70%;
+		  margin: 0 auto 20px; /* Center the image and add spacing */
+		}
+	  }
