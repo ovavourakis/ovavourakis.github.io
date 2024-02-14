@@ -1394,6 +1394,19 @@ input, select, textarea {
 
 		}
 
+/* ANIMATIONS */
+
+/* The typing effect */
+@keyframes typing {
+	from { width: 0; }
+	to { width: 100%; visibility: visible; }
+}
+
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange; }
+  }
+
 /* Header */
 
 	#header {
@@ -1494,10 +1507,51 @@ input, select, textarea {
 				letter-spacing: 0.2rem;
 				font-size: 1rem;/*main page main text*/
 				line-height: 2;
+	
+				margin-left: auto;
+  				margin-right: auto;
+				
+				/* animation */
+				overflow: hidden;
+				white-space: nowrap;
+				animation: 
+				  typing 3.5s steps(40, end),
+				  blink-caret .75s step-end 2;
+				animation-duration: 1s;
+				animation-timing-function: steps(40, end);
+				animation-iteration-count: 1;
+			  
+				&:nth-child(2) {
+				  visibility: hidden;
+				  animation-delay: 1.3s;
+				  animation-duration: 0.6s;
+				  animation-fill-mode: forwards;
+				  border-right: .15em solid orange; /* The typwriter cursor */
+				}
+			  
+				&:nth-child(3) {
+				  visibility: hidden;
+				  animation-delay: 2.5s;
+				  animation-fill-mode: forwards;
+				}
 			}
 
 			#header .content h1 {
-				color: #fffff8
+				color: #fffff8;
+
+				overflow: hidden; /* Ensures the content is not revealed until the animation */
+				white-space: nowrap;
+				border-right: .15em solid orange; /* The typwriter cursor */
+				white-space: nowrap; /* Keeps the content on a single line */
+				margin: auto auto; /* Gives that scrolling effect as the typing happens */
+				letter-spacing: .15em; /* Adjust as needed */
+				animation: 
+				  typing 3.5s steps(40, end),
+				  blink-caret .75s step-end 2;
+
+				animation-delay: 0.1s;
+				animation-duration: 0.6s;
+				animation-fill-mode: forwards;
 			}
 
 		#header nav ul {
